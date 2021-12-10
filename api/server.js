@@ -1,13 +1,12 @@
 const express = require("express")
+const resourceRouter = require("./resource/router")
 
 const server = express()
 
 server.use(express.json())
 
-// Catch all EP
-server.use("*", (req, res) => {
-  res.status(200).json({ message: "server is working!" })
-})
+// Routers
+server.use("/api/resources", resourceRouter)
 
 // Error Handler
 server.use((err, req, res, next) => { // eslint-disable-line
