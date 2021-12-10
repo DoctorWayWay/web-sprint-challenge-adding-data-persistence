@@ -20,8 +20,52 @@ const resources = [
 ]
 
 const tasks = [
-  { task_description: "", task_notes: "", task_completed: 0, project_id: 1 }
+  // Tasks for Project 1
+  {
+    task_description: "Fold a sheet of paper into a boat like shape",
+    task_notes: "Follow a guide if you are unsure of how to make a paper boat",
+    task_completed: 0,
+    project_id: 1
+  },
+  {
+    task_description: "Place created boat into any body of water",
+    task_notes: "A small pond would work best for this task",
+    task_completed: 0,
+    project_id: 1
+  },
+  // Tasks for Project 2
+  {
+    task_description: "Drill a 4in - 6in hole below the top of your two wooden posts",
+    task_notes: "Hole should big enough for the steel pipe to fit in tightly",
+    task_completed: 1,
+    project_id: 2
+  },
+  {
+    task_description: "Push pipe through post holes and tighten the iron caps at the ends",
+    task_notes: "Make sure that the caps are tightened VERY well",
+    task_completed: 1,
+    project_id: 2
+  },
+  {
+    task_description: "Dig two 2ft - 3ft holes into the ground for the posts",
+    task_notes: "Take your time to take measure out the space between the two posts, that way the holes are aligned correctly",
+    task_completed: 1,
+    project_id: 2
+  },
+  {
+    task_description: "Place assembled pull-up bar into the two holes",
+    task_notes: "Drop some tiny rocks at the bottom for extra stability",
+    task_completed: 1,
+    project_id: 2
+  },
+  {
+    task_description: "Mix concrete mix with water and pour it into the two holes",
+    task_notes: "Reference the bag instructions for mixing and wait time.",
+    task_completed: 1,
+    project_id: 1
+  },
 ]
+
 
 module.exports = {
   projects,
