@@ -66,9 +66,19 @@ const tasks = [
   },
 ]
 
+const project_resources = [
+  // Project 1 Resources
+  { project_id: 1, resource_id: 1 },
+  // Project 2 Resources
+  { project_id: 2, resource_id: 2 },
+  { project_id: 2, resource_id: 3 },
+  { project_id: 2, resource_id: 4 },
+  { project_id: 2, resource_id: 5 },
+]
 
 module.exports = {
   projects,
   resources,
-  tasks
+  tasks,
+  project_resources
 }
