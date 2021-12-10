@@ -74,7 +74,7 @@ Build an API inside the `api` folder with endpoints for:
 - [x] `[GET] /api/resources`
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [x] `[POST] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
@@ -100,10 +100,10 @@ Build an API inside the `api` folder with endpoints for:
 
 ## Submission format
 
-- [ ] Submit via Codegrade by pushing commits to your `main` branch on Github.
-- [ ] Check Codegrade before the deadline to compare its results against your local tests.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
+- [x] Submit via Codegrade by pushing commits to your `main` branch on Github.
+- [x] Check Codegrade before the deadline to compare its results against your local tests.
+- [x] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [x] New commits will be evaluated by Codegrade if pushed _before_ the sprint challenge deadline.
 
 ## Interview Questions
 
