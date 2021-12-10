@@ -76,9 +76,9 @@ const project_resources = [
   { project_id: 2, resource_id: 5 },
 ]
 
-module.exports = {
-  projects,
-  resources,
-  tasks,
-  project_resources
+exports.seed = async function (knex) {
+  await knex("recipes").insert(projects)
+  await knex("ingredients").insert(resources)
+  await knex("steps").insert(tasks)
+  await knex("step_ingredients").insert(project_resources)
 }
