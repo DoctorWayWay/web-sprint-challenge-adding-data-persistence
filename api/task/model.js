@@ -26,6 +26,36 @@ async function getAllTasks() {
   return allTasks
 }
 
+async function getTaskById(task_id) {
+  const [task] = await db("tasks")
+    .where("task_id", task_id)
+  if (task.task_completed === 1) {
+    return {
+      ...task,
+      task_completed: true,
+    }
+  } else if (task.task_completed === 0) {
+    return {
+      ...task,
+      task_completed: false,
+    }
+  } else if (task.task_completed !== 1 || task.task_completed !== 0) {
+    return {
+      ...task,
+      task_completed: false,
+    }
+  }
+}
+
+async function postTask(task) {
+  const [newtaskId] = await db("tasks")
+    .insert(task)
+  const newtask = await getTaskById(newtaskId)
+  return newtask
+}
+
 module.exports = {
   getAllTasks,
+  getTaskById,
+  postTask,
 }
